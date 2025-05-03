@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/test_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/question_text_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Текст вопроса"
+            android:inputType="textMultiLine"
+            android:minLines="3"/>
+
+        <EditText
+            android:id="@+id/option1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Вариант ответа 1"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/option2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Вариант ответа 2"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/option3_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Вариант ответа 3"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Правильный ответ:"/>
+
+        <RadioGroup
+            android:id="@+id/correct_answer_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/correct_option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вариант 1"/>
+
+            <RadioButton
+                android:id="@+id/correct_option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вариант 2"/>
+
+            <RadioButton
+                android:id="@+id/correct_option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вариант 3"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/create_question_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:text="Добавить вопрос"/>
+    </LinearLayout>
+</ScrollView>
